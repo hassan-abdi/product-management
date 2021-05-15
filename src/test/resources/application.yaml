@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    password: 123
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres?searchpath=product_management
+    username: postgres
+    hikari:
+      schema: product_management
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+product:
+  currency:
+    default: USD
+  top:
+    limit: 5
+  exchange:
+    supportedCurrencies:
+      - USD
+      - EUR
+      - GBP
+      - CAD
+    service-url: http://api.currencylayer.com/live
+    interval: 6000000000000000
+    access-key: 3ee0c365cc8539362ae2e1f3848e9f4f
