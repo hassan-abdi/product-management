@@ -1,4 +1,4 @@
-DROP schema IF EXISTS product_management;
+DROP schema IF EXISTS product_management cascade ;
 create schema product_management;
 SET search_path = product_management;
 

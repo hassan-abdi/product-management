@@ -40,8 +40,10 @@ Your solution should include a working API and some automated tests that verify 
 - Postgres
 - Junit 5
 - Gradle
+- Docker
 
 ### Build Command
+#####Make sure docker machine is installed already.
 - To build and run tests
 > gradle clean build
 
@@ -51,4 +53,3 @@ http://localhost:8080/swagger-ui/index.html
 ### Todo
 - Maximize code coverage to %100.
 - Integrate Exchange Service with Moneta JSR 354.
-- Use an embedded Postgresql for integration and unit tests.

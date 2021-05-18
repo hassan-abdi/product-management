@@ -1,11 +1,6 @@
 spring:
-  datasource:
-    password: 123
-    platform: postgres
-    url: jdbc:postgresql://localhost:5432/postgres?searchpath=product_management
-    username: postgres
-    hikari:
-      schema: product_management
+  profiles:
+    active: test
   jpa:
     hibernate:
       ddl-auto: create-drop
