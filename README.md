@@ -53,3 +53,4 @@ http://localhost:8080/swagger-ui/index.html
 ### Todo
 - Maximize code coverage to %100.
 - Integrate Exchange Service with Moneta JSR 354.
+- Do research to find an alternative solution of pessimistic locking in the product view service. 
