@@ -1,5 +1,6 @@
 package com.galvanize.productmanagement.controller;
 
+import com.galvanize.productmanagement.common.AbstractTest;
 import com.galvanize.productmanagement.dto.ProductCreationRequest;
 import com.galvanize.productmanagement.dto.ProductResponse;
 import com.galvanize.productmanagement.dto.RestError;
@@ -16,8 +17,7 @@ import java.math.BigDecimal;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class ProductControllerIT {
+public class ProductControllerIT extends AbstractTest {
     @LocalServerPort
     private int port;
 

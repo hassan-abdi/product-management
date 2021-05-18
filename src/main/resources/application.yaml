@@ -1,6 +1,8 @@
 server:
   port: 8080
 spring:
+  profiles:
+    active: production
   datasource:
     password: 123
     platform: postgres
@@ -8,9 +10,10 @@ spring:
     username: postgres
     hikari:
       schema: product_management
+    initialization-mode: always
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
 product:
   currency:
     default: USD
